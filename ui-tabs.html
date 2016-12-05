@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <title>Omega - UI Tabs</title>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="assets/jquery-ui/jquery-ui.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat" rel="stylesheet"/>
+
+    <!-- FontIcons -->
+    <link rel="stylesheet" type="text/css" href="assets/fonticons/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/weather-icons/weather-icons.min.css"/>
+
+    <!-- iCheck -->
+    <link rel="stylesheet" type="text/css" href="assets/icheck/skins/flat/_all.css"/>
+
+    <!-- Bootstrap Switch -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-switch/bootstrap-switch.min.css"/>
+
+    <!-- Messenger -->
+    <link rel="stylesheet" type="text/css" href="assets/messenger/css/messenger.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/messenger/css/messenger-theme-flat.css"/>
+
+    <!-- Vex Modals -->
+    <link rel="stylesheet" href="assets/vex/css/vex.css" />
+    <link rel="stylesheet" href="assets/vex/css/vex-theme-os.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/defaults.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/widgets.css" />
+    <!--<script type="text/javascript" src="assets/lessjs/less.js"></script>-->
+
+    <!-- Google Maps -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiP7N-tTyFeOFp-KhecSZNJ9t6EvueYE"></script>
+
+  </head>
+  <body data-preload="false">
+
+    <div class="omega-container">
+
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-left">
+
+        <!-- Profile Box -->
+        <div class="logobox">
+          <h1><a href="index.html">Omega Admin <span>v.1.3</span></a></h1>
+          <h1 class="collapsed"><a href="index.html">OA</a></h1>
+        </div>
+
+        <!-- Sidebar Container -->
+        <div class="sidebar-container">
+
+          <!-- Sidebar Inner Container -->
+          <div class="sidebar-inner slimscroll" data-scroll-height="100%">
+
+
+            <ul class="sidebar-nav sidebar-main-nav">
+
+              <!-- Title -->
+              <li class="title">
+                <span>Pages</span>
+              </li>
+
+
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-desktop"></span> <span>Dashboard</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="index.html">
+                      <span class="fa fa-star"></span> <span class="menu-title">Basic</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="index-v2.html">
+                      <span class="fa fa-star"></span> <span class="menu-title">Advanced</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="index-v3.html">
+                      <span class="fa fa-star"></span> <span class="menu-title">Right Sidebar</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-envelope-o"></span> <span>Mailbox</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                  <span class="menu-notification bg-darkgreen">2</span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="mailbox-inbox.html">
+                      <span class="fa fa-inbox"></span> <span class="menu-title">Inbox</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="mailbox-mail.html">
+                      <span class="fa fa-inbox"></span> <span class="menu-title">Mail</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="mailbox-new.html">
+                      <span class="fa fa-inbox"></span> <span class="menu-title">Compose</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="gallery.html">
+                  <span class="fa fa-table"></span> <span>Gallery</span>
+                </a>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-list"></span> <span>Pages</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                  <span class="menu-notification bg-red">3</span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="error-404.html">
+                      <span class="fa fa-frown-o"></span> <span class="menu-title">Error 404</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="error-500.html">
+                      <span class="fa fa-frown-o"></span> <span class="menu-title">Error 500</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="profile.html">
+                      <span class="fa fa-user"></span> <span class="menu-title">Profile</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="login.html">
+                      <span class="fa fa-lock"></span> <span class="menu-title">Login</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="locked.html">
+                      <span class="fa fa-lock"></span> <span class="menu-title">Locked</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="register.html">
+                      <span class="fa fa-user"></span> <span class="menu-title">Register</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="forgot-password.html">
+                      <span class="fa fa-user"></span> <span class="menu-title">Forgot Password</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-support"></span> <span>Support Center</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                  <span class="menu-notification bg-red">2</span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="support-tickets.html">
+                      <span class="fa fa-folder-open"></span> <span class="menu-title">Ticket Archive</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="support-ticket-response.html">
+                      <span class="fa fa-check"></span> <span class="menu-title">Ticket Response</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-folder-o"></span> <span>Projects Center</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="projects-list.html">
+                      <span class="fa fa-folder-open"></span> <span class="menu-title">Projects Archive</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="project-single.html">
+                      <span class="fa fa-search-plus"></span> <span class="menu-title">Projects Details</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="tasks-list.html">
+                  <span class="fa fa-code-fork"></span> <span>Tasks</span>
+                </a>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-shopping-basket"></span> <span>eCommerce</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="ecommerce-list.html">
+                      <span class="fa fa-shopping-basket"></span> <span class="menu-title">Product List</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ecommerce-order-list.html">
+                      <span class="fa fa-shopping-basket"></span> <span class="menu-title">Order List</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ecommerce-order-details.html">
+                      <span class="fa fa-shopping-basket"></span> <span class="menu-title">Order Details</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="invoice.html">
+                  <span class="icon-calculator"></span> <span>Invoice</span>
+                </a>
+              </li>
+
+              <!-- Title -->
+              <li class="title">
+                <span>Components</span>
+              </li>
+
+              <!-- Items -->
+              <li >
+                <a href="panels.html">
+                  <span class="icon-layers"></span> <span>Panels</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="icons.html">
+                  <span class="icon-emo-squint"></span> <span>Icons</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="icon-chart"></span> <span>Charts</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="morris-charts.html">
+                      <span class="icon-chart"></span> <span class="menu-title">Morris</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="chartjs-charts.html">
+                      <span class="icon-chart"></span> <span class="menu-title">ChartJS</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="c3js-charts.html">
+                      <span class="icon-chart"></span> <span class="menu-title">C3js</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="maps.html">
+                  <span class="icon-map"></span> <span>Maps</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="code.html">
+                  <span class="icon-code"></span> <span>Code</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="pricing-tables.html">
+                  <span class="icon-params"></span> <span>Pricing Tables</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="icon-calendar-4"></span> <span>Tables</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="tables-bootstrap.html">
+                      <span class="icon-calendar-4"></span> <span class="menu-title">Bootstrap</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="tables-datatables.html">
+                      <span class="icon-news"></span> <span class="menu-title">Datatables</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="fa fa-calculator"></span> <span>Forms</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="forms-basic.html">
+                      <span class="fa fa-calculator"></span> <span class="menu-title">Basic Elements</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="forms-advanced.html">
+                      <span class="fa fa-calculator"></span> <span class="menu-title">Advanced Elements</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="forms-checkbox.html">
+                      <span class="fa fa-calculator"></span> <span class="menu-title">Checkbox & Switches Elements</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="icon-th-outline"></span> <span>UI Elements</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="ui-faq.html">
+                      <span class="fa fa-question"></span> <span class="menu-title">FAQ</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-accordions.html">
+                      <span class="icon-sun"></span> <span class="menu-title">Accordions</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-buttons.html">
+                      <span class="icon-play"></span> <span class="menu-title">Buttons</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-dropdowns.html">
+                      <span class="icon-down-small"></span> <span class="menu-title">Dropdowns</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-tabs.html">
+                      <span class="icon-th-large-outline"></span> <span class="menu-title">Tabs</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-messenger.html">
+                      <span class="fa fa-comment-o"></span> <span class="menu-title">Messenger</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+          </ul>  </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Top Bar -->
+      <div class="omega-topbar container-fluid">
+        <div class="topbar-inner">
+
+          <!-- Left -->
+          <div class="col-lg-6">
+            <ul class="topbar-links left">
+              <li><a href="#" class="sidebar-collapse"><i class="icon-indent-left"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-6 text-right">
+
+            <!-- Links -->
+            <ul class="topbar-links right">
+              <li>
+                <div class="top-bar-profile">
+                  <div class="avatar-holder">
+                    <a href="profile.html"><img src="_demo/profile/profile-45x45.jpg" alt="Jane Doe @ Omega Template"/></a>
+                  </div>
+                  <div class="profile-info">
+                    <a href="profile.html">Cynthia Bell</a>
+                    <span>Administrator</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-email"></i>
+                    <span class="notification bg-red">3</span>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <!-- Dropdown Header Start -->
+                    <div class="dropdown-header">
+                      You have  
+                      <span class="label label-danger">3</span>
+                      new notifications!
+                    </div>
+                    <!-- Dropdown Header End -->
+
+                    <!-- Content Start -->
+                    <div class="dropdown-content">
+                      <ul>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user01.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Sent you an e-mail.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user02.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Updated their profile.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user02.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Registered their profile.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Content End -->
+
+                    <!-- Dropdown Footer Start -->
+                    <div class="dropdown-footer">
+                      <a href="#">See more</a>
+                    </div>
+                    <!-- Dropdown Footer End -->
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-bell"></i>
+                    <span class="notification bg-lightblue">2</span>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <!-- Dropdown Header Start -->
+                    <div class="dropdown-header">
+                      You have  
+                      <span class="label label-lightblue">2</span>
+                      new notifications!
+                    </div>
+                    <!-- Dropdown Header End -->
+
+                    <!-- Content Start -->
+                    <div class="dropdown-content">
+                      <ul>
+                        <li>
+                          <div class="notification-data no-margin">
+                            Pending update for App.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-data no-margin">
+                            You have new App available.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Content End -->
+
+                    <!-- Dropdown Footer Start -->
+                    <div class="dropdown-footer">
+                      <a href="#">See more</a>
+                    </div>
+                    <!-- Dropdown Footer End -->
+
+                  </div>
+                </div>
+              </li>
+              <li class="button">
+                <a href="#" class="btn-logout">
+                  <i class="icon-power"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Body -->
+      <div class="page-content">
+        <div class="breadcrumbs-container">
+
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#">
+                <i class="icon-home-2"></i>
+                Dashboard
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#">UI Elements</a>
+            </li>
+            <li>
+              <a href="ui-tabs.html">Tabs</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="container-fluid">
+
+          <!-- Row -->
+          <div class="row">
+
+
+            <div class="col-lg-6">
+
+              <!-- Box Start -->
+              <div class="panel">
+
+                <div class="panel-heading">
+                  <h1 class="panel-title">Basic Tabs</h1>
+                </div>
+
+                <!-- Content Start -->
+                <div class="panel-body no-padding">
+
+                  <!-- Tabs Navigation Start -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                  </ul>
+                  <!-- Tabs Navigation End -->
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec  ac accumsan quis, venenatis ac magna. Fusce malesuada commodo rutrum. Aliquam rhoncus justo est, et tempus risus pharetra nec in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+
+                    <div class="tab-pane" id="profile"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus,  gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="messages"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="settings"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. ivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+                  </div>
+
+                </div>
+                <!-- Content End -->
+
+              </div>
+              <!-- Box End -->
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+              <!-- Box Start -->
+              <div class="panel">
+
+                <div class="panel-heading">
+                  <h1 class="panel-title">Right Aligned Tabs</h1>
+                </div>
+
+                <!-- Content Start -->
+                <div class="panel-body no-padding">
+
+                  <!-- Tabs Navigation Start -->
+                  <ul class="nav nav-tabs text-right">
+                    <li class="active"><a href="#home-ar" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile-ar" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages-ar" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings-ar" data-toggle="tab">Settings</a></li>
+                  </ul>
+                  <!-- Tabs Navigation End -->
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home-ar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum  quis rhoncus. Aliquam molestie, mauris vel commodo scelerisque, erat sapien vestibulum urna, nec sagittis lacus ligula eget purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam egestas vel massa a tempor. Pellentesque sollicitudin arcu in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+
+                    <div class="tab-pane" id="profile-ar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra , neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="messages-ar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="settings-ar"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla  posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+                  </div>
+
+                </div>
+                <!-- Content End -->
+
+              </div>
+              <!-- Box End -->
+
+            </div>
+
+
+          </div>
+
+          <!-- Row -->
+          <div class="row">
+
+
+            <div class="col-lg-6">
+
+              <!-- Box Start -->
+              <div class="panel">
+
+                <div class="panel-heading">
+                  <h1 class="panel-title">Colored Tabs</h1>
+                </div>
+
+                <!-- Content Start -->
+                <div class="panel-body no-padding">
+
+                  <!-- Tabs Navigation Start -->
+                  <ul class="nav nav-tabs bg-lightblue text-center">
+                    <li class="active"><a href="#home-colors" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile-colors" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages-colors" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings-colors" data-toggle="tab">Settings</a></li>
+                  </ul>
+                  <!-- Tabs Navigation End -->
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home-colors"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus,  sollicitudin arcu in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+
+                    <div class="tab-pane" id="profile-colors"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="messages-colors"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="settings-colors"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec  sollicitudin arcu in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+                  </div>
+
+                </div>
+                <!-- Content End -->
+
+              </div>
+              <!-- Box End -->
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+              <!-- Box Start -->
+              <div class="panel">
+
+                <div class="panel-heading">
+                  <h1 class="panel-title">Colored Tab Pills</h1>
+                </div>
+
+                <!-- Content Start -->
+                <div class="panel-body no-padding">
+
+                  <!-- Tabs Navigation Start -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home-color-pills" class="bg-lightblue" data-toggle="tab"><i class="icon-home"></i></a></li>
+                    <li><a href="#profile-color-pills" class="bg-red" data-toggle="tab"><i class="icon-user"></i></a></li>
+                    <li><a href="#messages-color-pills" class="bg-white" data-toggle="tab"><i class="icon-code"></i></a></li>
+                    <li><a href="#settings-color-pills" class="bg-darkgreen" data-toggle="tab"><i class="icon-cog"></i></a></li>
+                  </ul>
+                  <!-- Tabs Navigation End -->
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home-color-pills"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec  sollicitudin arcu in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+
+                    <div class="tab-pane" id="profile-color-pills"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="messages-color-pills"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="settings-color-pills"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla.  mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+                  </div>
+
+                </div>
+                <!-- Content End -->
+
+              </div>
+              <!-- Box End -->
+
+            </div>
+
+
+          </div>
+
+          <!-- Row -->
+          <div class="row">
+
+
+            <div class="col-lg-6">
+
+              <!-- Box Start -->
+              <div class="panel">
+
+                <div class="panel-heading">
+                  <h1 class="panel-title">Centered Tabs</h1>
+                </div>
+
+                <!-- Content Start -->
+                <div class="panel-body no-padding">
+
+                  <!-- Tabs Navigation Start -->
+                  <ul class="nav nav-tabs text-center">
+                    <li class="active"><a href="#home-ce" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile-ce" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages-ce" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings-ce" data-toggle="tab">Settings</a></li>
+                  </ul>
+                  <!-- Tabs Navigation End -->
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home-ce"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla.  Pellentesque sollicitudin arcu in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+
+                    <div class="tab-pane" id="profile-ce"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="messages-ce"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="settings-ce"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nullaus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+                  </div>
+
+                </div>
+                <!-- Content End -->
+
+              </div>
+              <!-- Box End -->
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+              <!-- Box Start -->
+              <div class="panel">
+
+                <div class="panel-heading">
+                  <h1 class="panel-title">Tabs with Icons</h1>
+                </div>
+
+                <!-- Content Start -->
+                <div class="panel-body no-padding">
+
+                  <!-- Tabs Navigation Start -->
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home-icon" data-toggle="tab"><i class="icon-home"></i></a></li>
+                    <li><a href="#profile-icon" data-toggle="tab"><i class="icon-user"></i></a></li>
+                    <li><a href="#messages-icon" data-toggle="tab"><i class="icon-code"></i></a></li>
+                    <li><a href="#settings-icon" data-toggle="tab"><i class="icon-cog"></i></a></li>
+                  </ul>
+                  <!-- Tabs Navigation End -->
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="home-icon"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec  ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+
+                    <div class="tab-pane" id="profile-icon"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="messages-icon"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec fermentum metus tellus eget dui. Suspendisse rhoncus, elit a viverra gravida, orci arcu eleifend dolor, in fringilla sem elit id nulla. Sed pharetra quam non fringilla scelerisque. Maecenas congue consequat iaculis. Nullam pulvinar, sapien vel feugiat pellentesque, enim lorem eleifend erat, cursus imperdiet quam dui sit amet elit.</p></div>
+
+                    <div class="tab-pane" id="settings-icon"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum, est vitae pharetra mollis, neque risus faucibus metus, nec ellentesque sollicitudin arcu in facilisis posuere. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, bl semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p><p>Nam felis nisl, scelerisque non euismod sed, scelerisque a augue. Ut aliquet sollicitudin ullamcorper. Fusce sed magna semper, aliquam lectus eget, scelerisque quam. Etiam sed arcu a sem lobortis ultricies a vitae ipsum. Aenean mollis bibendum adipiscing. Donec elit lorem, blandit et eros eu, semper congue sem. In vulputate ipsum ac posuere placerat. Vivamus non consectetur lorem. Vivamus semper tellus leo, eu facilisis velit iaculis a. Suspendisse et elit neque. In eu volutpat est. Aenean vel tincidunt tortor.</p></div>
+                  </div>
+
+                </div>
+                <!-- Content End -->
+
+              </div>
+              <!-- Box End -->
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="assets/preloader/preloader.js"></script>
+    <script type="text/javascript" src="assets/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="assets/various.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- SlimScroll -->
+    <script type="text/javascript" src="assets/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- CountUp -->
+    <script type="text/javascript" src="assets/countUp/countUp.js"></script>
+    <script type="text/javascript" src="assets/countUp/countUp-jquery.js"></script>
+
+    <!-- iCheck -->
+    <script type="text/javascript" src="assets/icheck/icheck.min.js"></script>
+
+    <!-- Messenger -->
+    <script type="text/javascript" src="assets/messenger/js/messenger.min.js"></script>
+    <script type="text/javascript" src="assets/messenger/js/messenger-theme-flat.js"></script>
+
+    <!-- Bootstrap Switch -->
+    <script type="text/javascript" src="assets/bootstrap-switch/bootstrap-switch.min.js"></script>
+
+    <!-- Vex Modals -->
+    <script src="assets/vex/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+
+    <!-- ChartJS -->
+    <script type="text/javascript" src="assets/chartjs/Chart.bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/panels.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="js/custom-google-maps.js" type="text/javascript"></script>
+
+  </body>
+</html>

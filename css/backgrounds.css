@@ -1,0 +1,53 @@
+/*
+Omega Admin Template
+All rights reserverd © 2016
+Creativico
+*/
+
+.label-green,
+.bg-darkgreen {
+  background: #9eb921 !important;
+  color: #fff !important;
+}
+
+.bg-darkblue {
+  background: #2b9de3 !important;
+  color: #fff !important;
+}
+
+.label-red,
+.bg-red {
+  background: #e52448 !important;
+  color: #fff !important;
+}
+
+.bg-orange {
+  background: #FA7252 !important;
+  color: #fff !important;
+}
+
+.label-lightblue,
+.bg-lightblue {
+  background: #24b2e5 !important;
+  color: #fff !important;
+}
+
+.bg-grey {
+  background: #273135 !important;
+  color: #fff !important;
+}
+
+.bg-white {
+  background: #fff !important;
+  color: #273135 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.label-yellow,
+.bg-yellow {
+  background: #ffde6a !important;
+  color:#fff;
+}

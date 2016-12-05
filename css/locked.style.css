@@ -1,0 +1,81 @@
+/*
+Omega Admin Template
+All rights reserverd © 2016
+Creativico
+*/
+/* CSS Start */
+/*
+Omega Admin Template
+All rights reserverd © 2016
+Creativico
+*/
+/* Less Settings */
+/* Overall links */
+/* Sidebar - Profile Actions */
+/* Sidebar Menu List */
+/* Sidebar */
+/* Sidebar Active Border */
+/* TopBar */
+/* Inbox */
+/* Colors */
+html {
+  min-height: 100%;
+}
+body.login {
+  background: url('../images/login-background.jpg') center center no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.omega-login-container .page-content {
+  margin-left: 0px;
+  margin-top: 250px;
+}
+.panel.locked-box {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 0px;
+}
+.panel.locked-box .avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+.panel.locked-box a {
+  color: #273135;
+  font-size: 14px;
+}
+.panel.locked-box .panel-heading {
+  background: #FA7252;
+}
+.panel.locked-box .panel-heading h1 {
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.panel.locked-box form input {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+  border: 0px;
+  border-bottom: 2px solid #e1e5e6;
+  background: #fff !important;
+  padding: 20px;
+}
+.panel.locked-box form input:focus {
+  outline: none;
+  border-bottom: 2px solid #FA7252;
+}
+.panel.locked-box form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.panel.locked-box form input[type="submit"] {
+  background: #273135 !important;
+  border-radius: 5px;
+  border: 0px !important;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*# sourceMappingURL=locked.style.css.map */

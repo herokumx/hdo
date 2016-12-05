@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <title>Omega - Tasks List</title>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="assets/jquery-ui/jquery-ui.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat" rel="stylesheet"/>
+
+    <!-- FontIcons -->
+    <link rel="stylesheet" type="text/css" href="assets/fonticons/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/weather-icons/weather-icons.min.css"/>
+
+    <!-- iCheck -->
+    <link rel="stylesheet" type="text/css" href="assets/icheck/skins/flat/_all.css"/>
+
+    <!-- Bootstrap Switch -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-switch/bootstrap-switch.min.css"/>
+
+    <!-- Messenger -->
+    <link rel="stylesheet" type="text/css" href="assets/messenger/css/messenger.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/messenger/css/messenger-theme-flat.css"/>
+
+    <!-- Vex Modals -->
+    <link rel="stylesheet" href="assets/vex/css/vex.css" />
+    <link rel="stylesheet" href="assets/vex/css/vex-theme-os.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/defaults.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/widgets.css" />
+    <!--<script type="text/javascript" src="assets/lessjs/less.js"></script>-->
+
+
+  </head>
+  <body data-preload="false">
+
+    <div class="omega-container">
+
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-left">
+
+        <!-- Profile Box -->
+        <div class="logobox">
+          <h1><a href="index.html">Omega Admin <span>v.1.3</span></a></h1>
+          <h1 class="collapsed"><a href="index.html">OA</a></h1>
+        </div>
+
+        <!-- Sidebar Container -->
+        <div class="sidebar-container">
+
+          <!-- Sidebar Inner Container -->
+          <div class="sidebar-inner slimscroll" data-scroll-height="100%">
+
+
+            <ul class="sidebar-nav sidebar-main-nav">
+
+              <!-- Title -->
+              <li class="title">
+                <span>Pages</span>
+              </li>
+
+
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-desktop"></span> <span>Dashboard</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="index.html">
+                      <span class="fa fa-star"></span> <span class="menu-title">Basic</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="index-v2.html">
+                      <span class="fa fa-star"></span> <span class="menu-title">Advanced</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="index-v3.html">
+                      <span class="fa fa-star"></span> <span class="menu-title">Right Sidebar</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-envelope-o"></span> <span>Mailbox</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                  <span class="menu-notification bg-darkgreen">2</span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="mailbox-inbox.html">
+                      <span class="fa fa-inbox"></span> <span class="menu-title">Inbox</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="mailbox-mail.html">
+                      <span class="fa fa-inbox"></span> <span class="menu-title">Mail</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="mailbox-new.html">
+                      <span class="fa fa-inbox"></span> <span class="menu-title">Compose</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="gallery.html">
+                  <span class="fa fa-table"></span> <span>Gallery</span>
+                </a>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-list"></span> <span>Pages</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                  <span class="menu-notification bg-red">3</span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="error-404.html">
+                      <span class="fa fa-frown-o"></span> <span class="menu-title">Error 404</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="error-500.html">
+                      <span class="fa fa-frown-o"></span> <span class="menu-title">Error 500</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="profile.html">
+                      <span class="fa fa-user"></span> <span class="menu-title">Profile</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="login.html">
+                      <span class="fa fa-lock"></span> <span class="menu-title">Login</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="locked.html">
+                      <span class="fa fa-lock"></span> <span class="menu-title">Locked</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="register.html">
+                      <span class="fa fa-user"></span> <span class="menu-title">Register</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="forgot-password.html">
+                      <span class="fa fa-user"></span> <span class="menu-title">Forgot Password</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-support"></span> <span>Support Center</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                  <span class="menu-notification bg-red">2</span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="support-tickets.html">
+                      <span class="fa fa-folder-open"></span> <span class="menu-title">Ticket Archive</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="support-ticket-response.html">
+                      <span class="fa fa-check"></span> <span class="menu-title">Ticket Response</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-folder-o"></span> <span>Projects Center</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="projects-list.html">
+                      <span class="fa fa-folder-open"></span> <span class="menu-title">Projects Archive</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="project-single.html">
+                      <span class="fa fa-search-plus"></span> <span class="menu-title">Projects Details</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li class="active">
+                <a href="tasks-list.html">
+                  <span class="fa fa-code-fork"></span> <span>Tasks</span>
+                </a>
+              </li>
+              <!-- Items --><li >
+                <a href="#">
+                  <span class="fa fa-shopping-basket"></span> <span>eCommerce</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;">
+                  <li >
+                    <a href="ecommerce-list.html">
+                      <span class="fa fa-shopping-basket"></span> <span class="menu-title">Product List</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ecommerce-order-list.html">
+                      <span class="fa fa-shopping-basket"></span> <span class="menu-title">Order List</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ecommerce-order-details.html">
+                      <span class="fa fa-shopping-basket"></span> <span class="menu-title">Order Details</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items --><li >
+                <a href="invoice.html">
+                  <span class="icon-calculator"></span> <span>Invoice</span>
+                </a>
+              </li>
+
+              <!-- Title -->
+              <li class="title">
+                <span>Components</span>
+              </li>
+
+              <!-- Items -->
+              <li >
+                <a href="panels.html">
+                  <span class="icon-layers"></span> <span>Panels</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="icons.html">
+                  <span class="icon-emo-squint"></span> <span>Icons</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="icon-chart"></span> <span>Charts</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="morris-charts.html">
+                      <span class="icon-chart"></span> <span class="menu-title">Morris</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="chartjs-charts.html">
+                      <span class="icon-chart"></span> <span class="menu-title">ChartJS</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="c3js-charts.html">
+                      <span class="icon-chart"></span> <span class="menu-title">C3js</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="maps.html">
+                  <span class="icon-map"></span> <span>Maps</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="code.html">
+                  <span class="icon-code"></span> <span>Code</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="pricing-tables.html">
+                  <span class="icon-params"></span> <span>Pricing Tables</span>
+                </a>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="icon-calendar-4"></span> <span>Tables</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="tables-bootstrap.html">
+                      <span class="icon-calendar-4"></span> <span class="menu-title">Bootstrap</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="tables-datatables.html">
+                      <span class="icon-news"></span> <span class="menu-title">Datatables</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="fa fa-calculator"></span> <span>Forms</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="forms-basic.html">
+                      <span class="fa fa-calculator"></span> <span class="menu-title">Basic Elements</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="forms-advanced.html">
+                      <span class="fa fa-calculator"></span> <span class="menu-title">Advanced Elements</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="forms-checkbox.html">
+                      <span class="fa fa-calculator"></span> <span class="menu-title">Checkbox & Switches Elements</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Items -->
+              <li >
+                <a href="#">
+                  <span class="icon-th-outline"></span> <span>UI Elements</span>
+                  <span class="toggle-button open"><i class="fa fa-plus"></i></span>
+                </a>
+                <ul class="sidebar-nav" style="display:none;"><li >
+                    <a href="ui-faq.html">
+                      <span class="fa fa-question"></span> <span class="menu-title">FAQ</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-accordions.html">
+                      <span class="icon-sun"></span> <span class="menu-title">Accordions</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-buttons.html">
+                      <span class="icon-play"></span> <span class="menu-title">Buttons</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-dropdowns.html">
+                      <span class="icon-down-small"></span> <span class="menu-title">Dropdowns</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-tabs.html">
+                      <span class="icon-th-large-outline"></span> <span class="menu-title">Tabs</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="ui-messenger.html">
+                      <span class="fa fa-comment-o"></span> <span class="menu-title">Messenger</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+          </ul>  </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Top Bar -->
+      <div class="omega-topbar container-fluid">
+        <div class="topbar-inner">
+
+          <!-- Left -->
+          <div class="col-lg-6">
+            <ul class="topbar-links left">
+              <li><a href="#" class="sidebar-collapse"><i class="icon-indent-left"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-6 text-right">
+
+            <!-- Links -->
+            <ul class="topbar-links right">
+              <li>
+                <div class="top-bar-profile">
+                  <div class="avatar-holder">
+                    <a href="profile.html"><img src="_demo/profile/profile-45x45.jpg" alt="Jane Doe @ Omega Template"/></a>
+                  </div>
+                  <div class="profile-info">
+                    <a href="profile.html">Cynthia Bell</a>
+                    <span>Administrator</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-email"></i>
+                    <span class="notification bg-red">3</span>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <!-- Dropdown Header Start -->
+                    <div class="dropdown-header">
+                      You have  
+                      <span class="label label-danger">3</span>
+                      new notifications!
+                    </div>
+                    <!-- Dropdown Header End -->
+
+                    <!-- Content Start -->
+                    <div class="dropdown-content">
+                      <ul>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user01.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Sent you an e-mail.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user02.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Updated their profile.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user02.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Registered their profile.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Content End -->
+
+                    <!-- Dropdown Footer Start -->
+                    <div class="dropdown-footer">
+                      <a href="#">See more</a>
+                    </div>
+                    <!-- Dropdown Footer End -->
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-bell"></i>
+                    <span class="notification bg-lightblue">2</span>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <!-- Dropdown Header Start -->
+                    <div class="dropdown-header">
+                      You have  
+                      <span class="label label-lightblue">2</span>
+                      new notifications!
+                    </div>
+                    <!-- Dropdown Header End -->
+
+                    <!-- Content Start -->
+                    <div class="dropdown-content">
+                      <ul>
+                        <li>
+                          <div class="notification-data no-margin">
+                            Pending update for App.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-data no-margin">
+                            You have new App available.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Content End -->
+
+                    <!-- Dropdown Footer Start -->
+                    <div class="dropdown-footer">
+                      <a href="#">See more</a>
+                    </div>
+                    <!-- Dropdown Footer End -->
+
+                  </div>
+                </div>
+              </li>
+              <li class="button">
+                <a href="#" class="btn-logout">
+                  <i class="icon-power"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Body -->
+      <div class="page-content">
+        <div class="breadcrumbs-container">
+
+          <ul class="breadcrumbs">
+            <li>
+              <a href="#">
+                <i class="icon-home-2"></i>
+                Dashboard
+              </a>
+            </li>
+
+
+            <li>
+              <a href="tasks-list.html">Tasks</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="container-fluid inbox-container">
+
+          <!-- Row -->
+          <div class="row">
+
+            <!-- Col LG 12 -->
+            <div class="col-lg-12">
+
+
+              <!-- Panel -->
+              <div class="panel">
+
+                <!-- Panel Heading -->
+                <div class="panel-heading">
+                  <h1 class="panel-title">Tasks List</h1>
+                </div>
+
+              </div>
+
+              <!-- Task List Start -->
+              <ul class="task-list">
+
+                <!-- Task List Nav Bar Start -->
+                <li class="nav">
+                  <a href="#" class="check-all">Check All</a>
+                  <a href="#" class="create-task"><i class="fa fa-plus-circle"></i> Create Task</a>
+                  <a href="#" class="delete-task"><i class="fa fa-minus-circle"></i> Delete All Tasks</a>
+                </li>
+                <!-- Task List Nav Bar End -->
+
+                <li>
+                  <input type="checkbox" class="icheck-orange" value="1" name="icheck-orange" checked="checked" />
+                  <span class="checked">Talk to developers</span>
+                  <div class="actions">
+                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="checkbox" class="icheck-orange" value="1" name="icheck-orange" />
+                  <span>Pay for server</span>
+                  <div class="actions">
+                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="checkbox" class="icheck-orange" value="1" name="icheck-orange" />
+                  <span>Hire a designer for logo</span>
+                  <div class="actions">
+                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="checkbox" class="icheck-orange" value="1" name="icheck-orange" checked="checked" />
+                  <span class="checked">Talk to client Johan</span>
+                  <div class="actions">
+                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="checkbox" class="icheck-orange" value="1" name="icheck-orange" checked="checked" />
+                  <span class="checked">Gather a team meeting</span>
+                  <div class="actions">
+                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+
+                <li>
+                  <input type="checkbox" class="icheck-orange" value="1" name="icheck-orange" />
+                  <span>Talk to team</span>
+                  <div class="actions">
+                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
+                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
+                  </div>
+                </li>
+
+              </ul>
+              <!-- Task List End -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="assets/preloader/preloader.js"></script>
+    <script type="text/javascript" src="assets/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="assets/various.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- SlimScroll -->
+    <script type="text/javascript" src="assets/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- CountUp -->
+    <script type="text/javascript" src="assets/countUp/countUp.js"></script>
+    <script type="text/javascript" src="assets/countUp/countUp-jquery.js"></script>
+
+    <!-- iCheck -->
+    <script type="text/javascript" src="assets/icheck/icheck.min.js"></script>
+
+    <!-- Messenger -->
+    <script type="text/javascript" src="assets/messenger/js/messenger.min.js"></script>
+    <script type="text/javascript" src="assets/messenger/js/messenger-theme-flat.js"></script>
+
+    <!-- Bootstrap Switch -->
+    <script type="text/javascript" src="assets/bootstrap-switch/bootstrap-switch.min.js"></script>
+
+    <!-- Vex Modals -->
+    <script src="assets/vex/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+
+    <!-- ChartJS -->
+    <script type="text/javascript" src="assets/chartjs/Chart.bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/panels.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script type="text/javascript" src="js/tasks.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,483 @@
+/*
+Omega Admin Template
+All rights reserverd © 2016
+Creativico
+*/
+/*
+Omega Admin Template
+All rights reserverd © 2016
+Creativico
+*/
+/* Less Settings */
+/* Overall links */
+/* Sidebar - Profile Actions */
+/* Sidebar Menu List */
+/* Sidebar */
+/* Sidebar Active Border */
+/* TopBar */
+/* Inbox */
+/* Colors */
+/* CSS Start */
+.panel-bar {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+}
+/* Weather */
+.weather-widget span,
+.weather-widget .weather-today {
+  color: #fff;
+}
+.weather-widget .info span {
+  margin-bottom: 15px;
+  display: block;
+}
+.weather-widget .panel-body {
+  padding: 0;
+  position: relative;
+}
+.weather-widget .panel-body .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9000;
+}
+.weather-widget .panel-body img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.weather-widget .panel-body .row {
+  position: relative;
+  z-index: 9999;
+}
+.weather-widget .weather-today {
+  padding: 25px;
+}
+.weather-widget .weather-today i {
+  font-size: 56px;
+  color: #fff;
+}
+.weather-widget .temperatures {
+  padding: 10px 0px;
+}
+.weather-widget .temperatures span {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+}
+.weather-widget .temperatures span + span {
+  margin-left: 10px;
+}
+.weather-widget .weather-week {
+  position: relative;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+.weather-widget .weather-week li {
+  display: inline-block;
+  width: 15.65%;
+}
+.weather-widget .weather-week ul li span {
+  display: block;
+  text-align: center;
+}
+.weather-widget .weather-week ul li span.day {
+  font-weight: bold;
+  font-size: 16px;
+}
+.weather-widget .weather-week ul li span.icon {
+  font-size: 28px;
+}
+.weather-widget .weather-week ul li span.temperature {
+  font-size: 18px;
+}
+/* Widgets */
+.widget {
+  background: #fff;
+  padding: 25px 15px;
+  box-sizing: border-box;
+}
+.widget .clear,
+.widget:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.widget .icon-holder {
+  text-align: right;
+}
+.widget .icon-holder i {
+  font-size: 56px;
+  line-height: 50px;
+  color: #e4e4e4;
+}
+.widget .title-holder h2 {
+  color: #FA7252;
+  font-size: 21px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-weight: 100;
+}
+.widget .title-holder h5 {
+  color: #273135;
+  font-weight: 100;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.widget .progress {
+  background: #f1f1f1;
+  box-shadow: none !important;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  height: 5px;
+}
+.widget .progress .progress-bar {
+  background: #FA7252;
+}
+.widget.lightblue .progress-bar {
+  background: #24b2e5;
+}
+.widget.navyblue .progress-bar {
+  background: #1b6a87;
+}
+.widget.green .progress-bar {
+  background: #37d526;
+}
+/* TimeLine */
+.timeline-container {
+  z-index: 1;
+  position: relative;
+  border-color: #273135;
+  padding: 0px 0px;
+}
+.timeline-container:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  margin-left: 0;
+  content: '';
+  border-left: 1px solid transparent;
+  border-color: #1b6a87;
+}
+.timeline-container .timeline-row {
+  position: relative;
+  padding: 10px 0px;
+}
+.timeline-container .timeline-row:before {
+  display: table;
+  content: '';
+}
+.timeline-container .timeline-row:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+.timeline-container .timeline-row .timeline-inner:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.timeline-container .timeline-row .timeline-inner:before {
+  display: table;
+  content: '';
+}
+.timeline-container .timeline-row .timeline-inner {
+  width: 50%;
+}
+.timeline-container .timeline-bullet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-top: -9px;
+  margin-left: -8px;
+  border-radius: 100px;
+  color: #fff;
+  background: #1b6a87;
+}
+.timeline-container .timeline-bullet:before {
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 4px 0 0 4px;
+  content: '';
+  border-radius: 100px;
+  background: #fff;
+}
+.timeline-container .timeline-panel {
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-top: -8px;
+  margin-left: 23px;
+  text-align: left;
+}
+.timeline-container .content.left {
+  float: right;
+  margin-right: 35px;
+  border-color: #273135;
+}
+.timeline-container .content {
+  position: relative;
+  display: block;
+  box-shadow: 0 0 0 transparent;
+  z-index: 1049;
+  top: 0;
+  left: 0;
+  min-width: 210px;
+  margin: 0;
+  padding: 0;
+}
+.timeline-container .content .avatar {
+  float: left;
+  vertical-align: top;
+}
+.timeline-container .content .avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.timeline-container .content .info {
+  float: left;
+  vertical-align: top;
+  width: 140px;
+  margin-left: 20px;
+}
+/***** Timeline Recent Tasks *****/
+.timeline-container.recent-tasks:before {
+  left: 68%;
+}
+.timeline-container.recent-tasks .timeline-row .timeline-inner {
+  width: 60%;
+}
+.timeline-container.recent-tasks .timeline-bullet {
+  left: 68%;
+}
+.timeline-container.recent-tasks .content .info {
+  float: none;
+  margin-left: 80px;
+  margin-top: 10px;
+  max-width: 100%;
+  width: 100%;
+  font-size: 13px;
+}
+.timeline-container.recent-tasks .content.left {
+  float: left;
+}
+.timeline-container.recent-tasks .timeline-panel {
+  top: auto;
+  margin-top: 0px;
+  right: 0px;
+  left: auto;
+  width: 30%;
+}
+.timeline-container.recent-tasks .timeline-panel .avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.timeline-container.recent-tasks .timeline-panel .info {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.timeline-container.recent-tasks .timeline-panel .info,
+.timeline-container.recent-tasks .timeline-panel .avatar {
+  float: right;
+}
+.timeline-container.recent-tasks .timeline-panel {
+  margin-left: 0px;
+  padding-left: 20px;
+}
+.timeline-container.recent-tasks .timeline-panel .notification {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #90e387;
+  font-weight: 300;
+  text-align: center;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 12px;
+}
+.timeline-container.recent-tasks .timeline-panel .notification.question {
+  background-color: #FA7252;
+}
+.timeline-container.recent-tasks .timeline-container.recent-tasks .timeline-panel .notification.pending {
+  background-color: #FA7252;
+  color: #333;
+}
+/* MiniBox */
+.mini-box h2 {
+  font-weight: bold;
+  font-size: 26px;
+}
+.mini-box h4 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #FA7252;
+}
+.panel-success.mini-box h2 {
+  color: #72c381;
+}
+.panel-success .panel-bar {
+  width: 100%;
+  height: 5px;
+  background: #72c381;
+}
+.panel-success .panel-body {
+  padding: 15px;
+}
+.panel-success .panel-heading {
+  background: #28bd8b;
+  border: 0px;
+}
+.panel-success .panel-heading h4 {
+  color: #FFFFFF;
+}
+.panel-danger.mini-box h2 {
+  color: #de6262;
+}
+.panel-danger .panel-bar {
+  width: 100%;
+  height: 5px;
+  background: #de6262;
+}
+.panel-danger .panel-body {
+  padding: 15px;
+}
+.panel-danger .panel-heading {
+  background: #D46942;
+  border: 0px;
+}
+.panel-danger .panel-heading h4 {
+  color: #FFFFFF;
+}
+.panel-primary.mini-box h2 {
+  color: #63acd9;
+}
+.panel-primary .panel-body {
+  padding: 15px;
+}
+.panel-primary .panel-bar {
+  width: 100%;
+  height: 5px;
+  background: #63acd9;
+}
+.panel-primary .panel-heading {
+  background: #109657;
+  border: 0px;
+}
+.panel-primary .panel-heading h4 {
+  color: #FFFFFF;
+}
+/* Mail & Invoice table */
+.mail-table th,
+.invoice-table th {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+/* Inline Calendar */
+.inline-calendar .ui-widget.ui-widget-content {
+  width: 100% !important;
+  border: 0px;
+}
+.inline-calendar .ui-widget-header {
+  background: #24b2e5;
+}
+.inline-calendar .ui-datepicker-title span {
+  color: #fff;
+}
+.inline-calendar .ui-datepicker .ui-datepicker-next,
+.inline-calendar .ui-datepicker .ui-datepicker-prev {
+  transition: none !important;
+}
+.inline-calendar .ui-datepicker-calendar tr a.ui-state-highlight {
+  background: #273135;
+  color: #fff;
+}
+.inline-calendar .ui-datepicker-calendar tr a.ui-state-active {
+  background: #FA7252;
+  color: #fff;
+}
+.inline-calendar .ui-datepicker-calendar tr a {
+  text-align: center;
+  line-height: 26px;
+  border: 1px solid #eee;
+}
+.inline-calendar .ui-datepicker-unselectable {
+  background: #eee;
+}
+/* Sidebar Widget */
+.widget-separator {
+  background: #5a5a5a;
+  height: 1px;
+  margin: 15px 10px;
+}
+.sidebar-widget {
+  padding: 5px 15px;
+}
+.sidebar-widget .info {
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+.sidebar-widget h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sidebar-widget h3 i {
+  padding-right: 10px;
+}
+.sidebar-widget .progress-bar-holder {
+  padding: 0px !important;
+}
+.sidebar-widget .progress-bar-holder .progress {
+  height: 5px;
+  margin: 0 0 5px 0;
+}
+.sidebar-widget .progress-bar-holder .progress .progress-bar {
+  background: #FA7252;
+}
+.whos-online {
+  margin: 15px 0px;
+}
+.whos-online li {
+  margin: 0 0 5px 0px;
+}
+.whos-online li a {
+  display: inline-block;
+}
+.whos-online .user-avatar {
+  float: left;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.whos-online .user-avatar img {
+  max-width: 100%;
+}
+.whos-online .user-info {
+  float: left;
+  display: inline-block;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=widgets.css.map */

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Heroku FX Platform Demo</title>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="assets/jquery-ui/jquery-ui.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat" rel="stylesheet"/>
+
+    <!-- FontIcons -->
+    <link rel="stylesheet" type="text/css" href="assets/fonticons/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/weather-icons/weather-icons.min.css"/>
+
+    <!-- iCheck -->
+    <link rel="stylesheet" type="text/css" href="assets/icheck/skins/flat/_all.css"/>
+
+    <!-- Bootstrap Switch -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-switch/bootstrap-switch.min.css"/>
+
+    <!-- Messenger -->
+    <link rel="stylesheet" type="text/css" href="assets/messenger/css/messenger.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/messenger/css/messenger-theme-flat.css"/>
+
+    <!-- Vex Modals -->
+    <link rel="stylesheet" href="assets/vex/css/vex.css" />
+    <link rel="stylesheet" href="assets/vex/css/vex-theme-os.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/variables.css" />
+    <link rel="stylesheet" type="text/css" href="css/backgrounds.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/defaults.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/widgets.css" />
+    <!--<script type="text/javascript" src="assets/lessjs/less.js"></script>-->
+
+    <!-- Google Maps -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaiP7N-tTyFeOFp-KhecSZNJ9t6EvueYE"></script>
+
+    <!-- MorrisJS -->
+    <link rel="stylesheet" type="text/css" href="assets/morrisjs/morris.css">
+
+  </head>
+  <body data-preload="true">
+
+    <div class="omega-container">
+
+      <!-- Sidebar -->
+      <div class="sidebar sidebar-left">
+
+        <!-- Profile Box -->
+        <div class="logobox">
+          <h1><a href="index.html">Heroku FX Demo <span>v.1.x</span></a></h1>
+          <h1 class="collapsed"><a href="index.html">OA</a></h1>
+        </div>
+
+        <!-- Sidebar Container -->
+        <div class="sidebar-container">
+
+          <!-- Sidebar Inner Container -->
+          <div class="sidebar-inner slimscroll">
+
+
+            <ul class="sidebar-nav sidebar-main-nav">
+
+              <!-- Title -->
+              <li class="title">
+                <span>Demo Menu</span>
+              </li>
+
+
+              <!-- Items -->
+              <li class="active">
+                <a href="index.html">
+                  <span class="fa fa-desktop"></span> <span>Walkthrough</span>
+                  <span class="toggle-button open"><i class="fa fa-minus"></i></span>
+                </a>
+                <ul class="sidebar-nav" >
+                  <li>
+                    <a href="slides.html">
+                      <span class="icon-play"></span> <span class="menu-title">Slides</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="overview.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 1 - Demo Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="kafka_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 2 - Ingest Kafka Data</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="kafka_view.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 3 - View Kafka Topic</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="postgres_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 3 - Digest to Postgres</span>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="map_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 4 - Analyze Postgres</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="connect_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 5 - Trigger the Journey</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="bc_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 6 - Send to BeyondCore</span>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="bc_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 7 - Send to Wave</span>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="mc_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 8 - Journey Interactions</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="jb_app.html">
+                      <span class="icon-play"></span> <span class="menu-title">Step 9 - Journey Analysis</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://na35.lightning.force.com/one/one.app#/sObject/0034100000ANNVvAAP/view?t=1478784870508" target="new">
+                      <span class="icon-play"></span> <span class="menu-title">Superfan Identified</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="summary.html">
+                      <span class="icon-play"></span> <span class="menu-title">Summary</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+          
+
+          </ul>  </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Top Bar -->
+      <div class="omega-topbar container-fluid">
+        <div class="topbar-inner">
+
+          <!-- Left -->
+          <div class="col-lg-6">
+            <ul class="topbar-links left">
+              <li><a href="#" class="sidebar-collapse"><i class="icon-indent-left"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Right -->
+          <div class="col-lg-6 text-right">
+
+            <!-- Links -->
+            <ul class="topbar-links right">
+              <li>
+                <div class="top-bar-profile">
+                  <div class="avatar-holder">
+                    <a href="index.html"><img src="_demo/profile/profile-45x45.png" alt="David@Heroku.com"/></a>
+                  </div>
+                  <div class="profile-info">
+                    <a href="index.html">David Baliles</a>
+                    <span>Heroku Admin</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-email"></i>
+                    <span class="notification bg-red">3</span>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <!-- Dropdown Header Start -->
+                    <div class="dropdown-header">
+                      You have  
+                      <span class="label label-danger">3</span>
+                      new notifications!
+                    </div>
+                    <!-- Dropdown Header End -->
+
+                    <!-- Content Start -->
+                    <div class="dropdown-content">
+                      <ul>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user01.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Sent you an e-mail.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user02.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Updated their profile.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-image">
+                            <img src="images/_demo/user02.jpg" alt="John Doe"/>
+                          </div>
+                          <div class="notification-data">
+                            Registered their profile.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Content End -->
+
+                    <!-- Dropdown Footer Start -->
+                    <div class="dropdown-footer">
+                      <a href="#">See more</a>
+                    </div>
+                    <!-- Dropdown Footer End -->
+
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-bell"></i>
+                    <span class="notification bg-lightblue">2</span>
+                  </a>
+                  <div class="dropdown-menu">
+
+                    <!-- Dropdown Header Start -->
+                    <div class="dropdown-header">
+                      You have  
+                      <span class="label label-lightblue">2</span>
+                      new notifications!
+                    </div>
+                    <!-- Dropdown Header End -->
+
+                    <!-- Content Start -->
+                    <div class="dropdown-content">
+                      <ul>
+                        <li>
+                          <div class="notification-data no-margin">
+                            Pending update for App.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="notification-data no-margin">
+                            You have new App available.
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Content End -->
+
+                    <!-- Dropdown Footer Start -->
+                    <div class="dropdown-footer">
+                      <a href="#">See more</a>
+                    </div>
+                    <!-- Dropdown Footer End -->
+
+                  </div>
+                </div>
+              </li>
+              <li class="button">
+                <a href="#" class="btn-logout">
+                  <i class="icon-power"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Body -->
+      <div class="page-content no-breadcrumbs">
+
+        <div class="container-fluid">
+
+          <!-- Row Start -->
+          <div class="row"> 
+
+              <!-- Revenu Chart Start -->
+              <div class="panel">
+                <div class="panel-body" style="overflow: visible;">
+                  <iframe width=100% height="800" src="https://fx-postgres-map.herokuapp.com" frameborder="0" allowfullscreen></iframe>
+                  <div class="graph" id="hero-area" data-chart="revenue" style="height:100%;width:100%;"></div>
+                </div>
+              </div>
+              <!-- Revenu Chart End -->
+
+              <!-- Revenu Chart End -->
+            </div>
+
+          </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="assets/preloader/preloader.js"></script>
+    <script type="text/javascript" src="assets/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="assets/various.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- SlimScroll -->
+    <script type="text/javascript" src="assets/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- CountUp -->
+    <script type="text/javascript" src="assets/countUp/countUp.js"></script>
+    <script type="text/javascript" src="assets/countUp/countUp-jquery.js"></script>
+
+    <!-- iCheck -->
+    <script type="text/javascript" src="assets/icheck/icheck.min.js"></script>
+
+    
+
+    <!-- Bootstrap Switch -->
+    <script type="text/javascript" src="assets/bootstrap-switch/bootstrap-switch.min.js"></script>
+
+    <!-- Vex Modals -->
+    <script src="assets/vex/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+
+    <!-- ChartJS -->
+    <script type="text/javascript" src="assets/chartjs/Chart.bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/panels.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <!-- MorrisJS -->
+    <script type="text/javascript" src="assets/morrisjs/raphael.min.js"></script>
+    <script type="text/javascript" src="assets/morrisjs/morris.min.js"></script>
+
+    <script type="text/javascript" src="js/dashboard.map.js"></script>
+    <script type="text/javascript" src="js/dashboard.charts.js"></script>
+
+    <!-- Flot -->
+    <script type="text/javascript" src="assets/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="js/flot.realtime.js"></script>
+
+  </body>
+</html>
