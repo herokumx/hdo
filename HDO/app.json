@@ -6,7 +6,7 @@
     "design-system"
   ],
   "website": "https://github.com/salesforce-ux/design-system-starter-kit",
-  "repository": "https://github.com/salesforce-ux/design-system-starter-kit",
+  "repository": "https://github.com/herokumx/hdo/tree/master/HDO",
   "logo": "https://starter-kit-demo.herokuapp.com/assets/logo.svg",
   "buildpacks": [
     {
