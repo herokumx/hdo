@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce Lightning Design System Starter Kit</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+  <!--
+    Base Global Header component
+    https://www.lightningdesignsystem.com/components/global-header/
+  -->
+  <header class="slds-global-header_container"><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Navigation</a><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Main Content</a>
+    <div class="slds-global-header slds-grid slds-grid--align-spread">
+      <div class="slds-global-header__item">
+        <div class="slds-global-header__logo">
+          <img src="/assets/images/logo-noname.svg" alt="" />
+        </div>
+      </div>
+      <div class="slds-global-header__item slds-global-header__item--search">
+        <div class="slds-form-element slds-lookup">
+          <label class="slds-assistive-text" for="global-search-01">Search Salesforce</label>
+          <div class="slds-form-element__control lookup__search-control slds-input-has-icon slds-input-has-icon--left">
+            <svg aria-hidden="true" class="slds-input__icon">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+            </svg>
+            <input id="global-search-01" class="slds-input slds-lookup__search-input" type="search" placeholder="Search Salesforce" />
+          </div>
+        </div>
+      </div>
+      <ul class="slds-global-header__item slds-grid slds-grid--vertical-align-center">
+        <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+          <button class="slds-button" title="person name" aria-haspopup="true">
+            <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+              <img src="/assets/images/avatar2.jpg" alt="person name" />
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!--
+    Placeholder to push the context bar down
+  -->
+  <div class="app-header-placeholder"></div>
+
+  <!--
+    Navigation Bar component
+    https://www.lightningdesignsystem.com/components/global-navigation/
+  -->
+  <div class="slds-context-bar">
+    <div class="slds-context-bar__primary slds-context-bar__item--divider-right">
+      <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--click slds-no-hover">
+        <div class="slds-context-bar__icon-action">
+          <a href="javascript:void(0);" class="slds-icon-waffle_container slds-context-bar__button">
+            <div class="slds-icon-waffle">
+              <div class="slds-r1"></div>
+              <div class="slds-r2"></div>
+              <div class="slds-r3"></div>
+              <div class="slds-r4"></div>
+              <div class="slds-r5"></div>
+              <div class="slds-r6"></div>
+              <div class="slds-r7"></div>
+              <div class="slds-r8"></div>
+              <div class="slds-r9"></div>
+            </div>
+            <span class="slds-assistive-text">Open App Launcher</span>
+          </a>
+        </div>
+        <span class="slds-context-bar__label-action slds-context-bar__app-name">
+          <span class="slds-truncate">Demo Hub</span>
+        </span>
+      </div>
+    </div>
+    <nav class="slds-context-bar__secondary" role="navigation">
+      <ul class="slds-grid">
+        <li class="slds-context-bar__item">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Home">
+            <span class="slds-truncate">Home</span>
+          </a>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">101</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Platform Resources</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://elements.heroku.com/addons" target="iframe">Add-On (Elements)</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://elements.heroku.com/buildpacks" target="iframe">Buildpacks (Elements)</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://elements.heroku.com/buttons" target="iframe">Buttons (Elements)</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.heroku.com/customers" target="iframe">Customers (Official)</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://devcenter.heroku.com" target="iframe">DevCenter Search</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com" target="iframe">Developer Dashboard</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://devcenter.heroku.com/start" target="iframe">Getting Started (DevCenter)</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://help.heroku.com/" target="iframe">Helpdesk & Support</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://devcenter.heroku.com/categories/reference" target="iframe">Reference (DevCenter)</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://tenkara.herokuapp.com" target="iframe">Tenkara (Internal)</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+         <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Core Dev</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Technology Demos</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-3dapp.herokuapp.com" target="iframe">3D: Autodesk Modeling</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://projectcolor-visualize.herokuapp.com/" target="iframe">3D: HomeDepot Retail</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-authenticate.herokuapp.com" target="iframe">Auth.SSO: Auth0</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-authenticate.herokuapp.com" target="iframe">Auth.SSO: OAuthable App</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-elfbrowser.herokuapp.com" target="iframe">Browse SFDC Events</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-kbase.herokuapp.com" target="iframe">IT Knowledgebase</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-helpdesk.herokuapp.com/en" target="iframe">IT Helpdesk</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://tools-pgweb.herokuapp.com" target="iframe">Postgres PGWeb Tool</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://st-pocanalysisdb.herokuapp.com" target="iframe">Postgres GIS/GEO</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://vpn-demo.herokuapp.com" target="iframe">Private Spaces VPN</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-pgquery.herokuapp.com" target="iframe">Query SFDC API</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://sfdc-react-integration.herokuapp.com" target="iframe">React, Node & SFDC</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-webleadform.herokuapp.com/" target="iframe">SFDC Web Lead Form</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Communities</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Portals & Communities</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://heroku-angularadmin.herokuapp.com" target="iframe">Angular Community</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.applauze.com" target="iframe">Applauze Ticketing Portal</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://open-event-dev.herokuapp.com" target="iframe">Event Registration App</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://www.thehumanrace.net" target="iframe">Human Race Community</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.launchacademy.com/online_intensive" target="iframe">Launch Academy eLearning</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://www.livenation.com" target="iframe">LiveNation</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-customerportal.herokuapp.com" target="iframe">Logicine Customer Portal</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://www.mapmyfitness.com/us/atlanta-ga" target="iframe">MapMyFitness Community</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://patriots-feed.herokuapp.com" target="iframe">New England Patriots</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.spartan.com/en" target="iframe">Spartan Race Community</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://vodacom.platform45.com" target="iframe">Vodacom e-School</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+       <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Data</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Data Lakes, Hubs & BI</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/apps/demo-sfdc-archive" target="iframe">Step 1 - Data Hub</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dataclips.heroku.com/ildwjhnsymtkeuamtbaymagewtvu-Retail-Revenue" target="iframe">Step 2 - Data Clips</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://addons-sso.heroku.com/apps/9ae716e1-324f-4f84-a476-b463e0ae61f9/addons/1714edcc-73da-447e-aeaf-612c81131912" target="iframe">Step 3 - ETL</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://addons-sso.heroku.com/apps/9ae716e1-324f-4f84-a476-b463e0ae61f9/addons/2182d2fb-9785-48ea-9aa9-ac4a9fa587dc" target="iframe">Step 4 - CRUD</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://app.powerbi.com/view?r=eyJrIjoiMjRjOTg4NzUtMmE3MS00Y2RkLWFlZDEtMWMzZmQ2ZDNhOTUzIiwidCI6Ijk1OGQyNmIwLWM2YTEtNGNmMy1iZWY0LTBkZWIwMWFkOTMyOCIsImMiOjR9" target="iframe">Step 5 - PowerBI Embedded</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dreamforce-demo.atbeyondcore.com/story/1689" target="iframe">Step 6 - Predictive Analytics</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://na35.salesforce.com/analytics/wave/wave.apexp?tsid=02u41000000nyQA#browse" target="iframe">Step 7 - Analytics Dashboard</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://fx-datalake.herokuapp.com/dash/4" target="iframe">Step 8 - Datalake Dashboard</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Kafka</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Heroku Kafka Demos</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dl.dropboxusercontent.com/u/12179667/Heroku.Kafka.Demo.pdf" target="iframe">Step 1 - Demo Overview</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://demo-kaas.herokuapp.com" target="iframe">Step 2 - Send Kafka Data</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-kafka-http.herokuapp.com" target="iframe">Step 3 - View Kafka Topic</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-kaas-postgres.herokuapp.com" target="iframe">Step 4 - Kafka to Postgres DB</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://docs.google.com/spreadsheets/d/1RSykCxEmPJyA4jzTtIHx1dALFaDk-8prMqDoy95FoEQ/edit?usp=sharing?widget=true&rm=minimal" target="iframe">Step 5 - View Postgres Data</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-kaas-pgconnect.herokuapp.com" target="iframe">Step 6 - Sync to Salesforce</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dl.dropboxusercontent.com/u/12179667/Heroku.Kafka.Demo.Summary.pdf" target="iframe">Step 7 - Summary</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://docs.google.com/presentation/d/1aW68_7Ty2lN6p9GaTJWekshvyICdaDvGgTMKahQnC68/embed?start=true&loop=true&delayms=10000" target="iframe">Step 8 - Kafka Training</a></span>
+                </a>
+              </li>
+             </ul>
+          </div>
+        </li>
+
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">FinServ</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Banking & Insurance Demos</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://local.aarpfoundation.org" target="iframe">AARP</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.applepiecapital.com" target="iframe">ApplePie Capital</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.consiliumcapital.com" target="iframe">Consilium Capital</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.farmers.com/quote/ffq/landingpage.jsf?windowid=1483977606477" target="iframe">Farmers Insurance</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-followanalytics.herokuapp.com/" target="iframe">Follow Analytics App</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.growthstreet.co.uk" target="iframe">Growth Street Banking</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://insurance-inventory.herokuapp.com/inventory/5849a34a6bb8b1110007d748?" target="iframe">Insurance Inventory App</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://market.missioncap.com" target="iframe">Mission Capital</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-myfinances.herokuapp.com" target="iframe">Online Banking Starter Kit</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://demo-financemgr.herokuapp.com/" target="iframe">Personal Finance Manager (Firefly)</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://joinrootdotcom.herokuapp.com/" target="iframe">Root Insurance App</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://tfsbillpay.com" target="iframe">TFS Backruptcy BillPay</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.protectionplace.com" target="iframe">The Warranty Group</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">FX</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+ 
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps"><a href="landing.html" target="iframe">End-to-End Platform</a></span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/orgs/herokumx/apps" target="new">Step 1 - Provision Heroku Kafka</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/orgs/herokumx/apps" target="new">Step 2 - Add MC to Heroku Data Sync</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://fx-producer.herokuapp.com" target="iframe">Step 3 - Ingest Kafka Data</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://fx-kafka.herokuapp.com" target="iframe">Step 4 - View Kafka Topic</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://fx-postgres.herokuapp.com/" target="iframe">Step 5 - Digest to Postgres</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://fx-postgres-map.herokuapp.com" target="iframe">Step 6 - Analyze Postgres</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://fx-producer-landing.herokuapp.com/index.html" target="iframe">Step 7 - Digest to Marketing Cloud</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://connect.heroku.com/sync/8fa343f7-1987-4fb6-b222-fb7f23e52959/overview" target="iframe">Step 8 - Trigger the Journey</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="beyondcore.html" target="iframe">Step 9 - Analyze in BeyondCore</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://na35.salesforce.com/analytics/wave/wave.apexp?tsid=02u41000000nyQA#dashboard/0FK410000001Vu9GAE" target="iframe">Step 10 - Analyze in Wave</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://na35.lightning.force.com/one/one.app#/sObject/0034100000ANNVvAAP/view?t=1478784870508" target="iframe">Step 11 - Analyze the Journey</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://na35.lightning.force.com/one/one.app#/sObject/0034100000ANNVvAAP/view?t=1478784870508" target="iframe">Step 12 - User Segment Identified</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="overview.html" target="iframe">Summary - Solution Overview</a></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+<li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Gov't</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+ 
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps"><a href="landing.html" target="iframe">Federal & SLG</a></span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/orgs/herokumx/apps" target="new">Boston 311 Service Center</a></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+<li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">IOT & Mfg</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Auto, IOT & Manufacturing</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://tripviewer.herokuapp.com" target="iframe">Automatic Trip Viewer</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-df-heartmonitor.herokuapp.com" target="iframe">Heartrate Monitor</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://smart.lynxgrills.com" target="iframe">Lynx Smart Grills</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-df-robot.herokuapp.com" target="iframe">Manufacturing Monitor</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-vehicle-alerts.herokuapp.com" target="iframe">SiriusXM Vehicle Alerts</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://turo.com" target="iframe">Turo Self-Rentals</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-kafka-xively.herokuapp.com" target="iframe">Xively IOT</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Marketing</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Marketing & Messaging</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://appcenter.s1.marketingcloudapps.com/#app-center" target="iframe">AppCenter - Marketing Cloud</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://mc.s7.exacttarget.com/cloud/#app/Journey%20Builder/%23bd1ba6ec-d98d-486f-be4b-fcf3342edf6f/3" target="iframe">Journeys - Marketing Cloud</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-vehicle-alerts.herokuapp.com" target="iframe">In-Vehicle Monitoring</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://developer.automatic.com/my-apps/#/app/1d2af5f108da66caf343" target="iframe">In-Vehicle Messaging</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-td-ibeacon.herokuapp.com/" target="iframe">iBeacon Proximity Marketing</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-td-creditcard.herokuapp.com/" target="iframe">Transaction Monitoring</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://demo-td-kafka.herokuapp.com/" target="iframe">Kafa Transaction Streams</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/apps/fx-journey/settings" target="iframe">JB Activity UX Heroku App</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://developer.automatic.com/my-apps/#/app/1d2af5f108da66caf343" target="iframe">JB Activity Heroku Endpoint</a></span>
+                </a>
+              </li>
+                <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-mcservices.herokuapp.com/" target="iframe">JB Activity Heroku API</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.bellycard.com/" target="iframe">Belly Loyalty</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://royalty.redrobin.com" target="iframe">Red Robin Royalty</a></span>
+                </a>
+              </li> 
+              </ul>
+          </div>
+        </li>
+         <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Partners</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Partners & Services</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://www.dotnetbuildpacks.com" target="iframe">.NET Core on Heroku</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://appirio.github.io/Mobile-Survey/" target="iframe">Appirio Mobile Survey</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://cadalys.github.io/CadalysDataArchive/index.html" target="iframe">Cadalys Data Archive</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://cloud-software-llc.github.io/time-tracker/index.html" target="iframe">Cloud SW Time Tracker</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://cadalys.github.io/CadalysDataArchive/index.html" target="iframe">Cadalys Data Archive</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://followanalytics.github.io/fa-demo-heroku-insurance" target="iframe">FollowAnalytics for Insurance</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://logiclinegmbh.github.io/splash-extended/index.html" target="iframe">Logicine Customer Portal</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://radialspark.github.io/TimeTracker/index.html" target="iframe">RadialSpark TimeTracker</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://wimsite.herokuapp.com/User/Dashboard" target="iframe">Softtrends Field Service</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://trifinlabs.github.io/salesforce-heroku-membership/" target="iframe">TrifinLabs SFDC Member Registration</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://elements.heroku.com/buttons/xively/concaria" target="iframe">Xively IOT Platform</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+          <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Predictive & ML</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Partners & Services</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://predictionio.incubator.apache.org/index.html" target="iframe">Prediction.io - Apache</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://www.dreamhouseapp.io/" target="iframe">Prediction.io - Dreamhouse</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dreamhouse-web-app-pio.herokuapp.com/" target="iframe">Prediction.io - Dreamhouse Demo</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://fx-visionapi.herokuapp.com/" target="iframe">Dreamhouse - Predictive Vision</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://einstein-vision.herokuapp.com/" target="iframe">Einstein - Image Classifier</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://heroku-recognizer.herokuapp.com" target="iframe">Einstein - Heroku Recognizer</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://addons-sso.heroku.com/apps/94a3469a-71b0-4512-8288-64e4098c6c0e/addons/64783dc3-62ac-40e3-a276-e75b14d97c6f" target="iframe">Cloudinary - Imaging</a></span>
+                </a>
+              </li>
+              
+              </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Retail</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Retail & Loyalty Demos</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.bellycard.com/blue/#tab-overview-profile" target="iframe">Belly Loyalty</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://bonobos.com" target="iframe">Bonobos</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://rv.campingworld.com" target="iframe">Camping World</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="apps_dreamhouse.html" target="iframe">Dreamhouse</a></span>
+                </a>
+              </li>
+               <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://www.everlane.com/collections/mens-all" target="iframe">Everlane</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-efix.herokuapp.com" target="iframe">FIX eCommerce</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://demo-df-appliance.herokuapp.com" target="iframe">In-store Marketing App</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://m.macys.com" target="iframe">Macy's mCommerce</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://mboutique.herokuapp.com" target="iframe">mBoutique eCommerce</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://m.proshop.patriots.com/" target="iframe">NFL Patriots ProShop</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://heroku-commerce.herokuapp.com" target="iframe">Well Commerce</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+       
+       
+      </ul>
+    </nav>
+  </div>
+
+  <main class="app-wrapper">
+    {% block content %}
+<div -webkit-overflow-scrolling: touch; overflow: auto;>
+<iframe class="iframe" name="iframe" src="http://www.heroku.com" width="100%" marginwidth="0" style="border: none; max-width:100%;"></iframe>
+</div>    {% endblock %}
+  </main>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/svg4everybody.min.js"></script>
+
+  <script>svg4everybody();</script>
+</body>
+</html>

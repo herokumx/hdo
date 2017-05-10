@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce Lightning Design System Starter Kit</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+
+  <style>
+.iportfolio .portfolio-image { overflow: visible; }
+
+.iportfolio img {
+	opacity: 1;
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 17px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 17px rgba(0, 0, 0, 0.15);
+	-webkit-transition: opacity .4s ease;
+	-o-transition: opacity .4s ease;
+	transition: opacity .4s ease;
+}
+
+.iportfolio img:hover { opacity: 0.85; }
+
+.iportfolio .portfolio-desc h3 {
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 15px;
+}
+
+.iportfolio .portfolio-desc h3 a:hover { color: #777; }
+
+.iportfolio .portfolio-desc h3 a span {
+	display: inline-block;
+	position: relative;
+	top: -1px;
+	vertical-align: middle;
+	margin: 0 0 0 3px;
+	font-size: 11px !important;
+	padding: 5px 7px;
+	font-weight: 400;
+	color: #FFF;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.testimonials-rating {
+	margin-top: 15px;
+	color: #FFD700;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.testi-content p {
+	font-size: 18px;
+	color: #666;
+}
+
+.testi-content p:before,
+.testi-content p:after { display: none; }
+
+.testi-meta:before { display: none; }
+.testi-meta span { padding-left: 0; }
+
+.intro-support-block {
+	border-top: 1px solid #EEE;
+	overflow: hidden;
+}
+
+.intro-support-block > div:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: -1px;
+	width: 0;
+	height: 100%;
+	border-left: 1px solid #EEE;
+}
+
+.intro-support-block a.col-padding {
+	display: block;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.intro-support-block a.col-padding:hover { background-color: #F5F5F5; }
+
+.intro-support-block span {
+	display: block;
+	font-size: 20px;
+	color: #444;
+	margin-top: 15px;
+}
+
+.device-xs .intro-support-block > div:before,
+.device-xxs .intro-support-block > div:before {
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	border-left: 0;
+	border-top: 1px solid #EEE;
+}
+
+#page-menu {
+	height: 0;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+#page-menu #page-menu-wrap {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+	-webkit-transform: translate3d(0,-44px,0);
+	-o-transform: translate3d(0,-44px,0);
+	transform: translate3d(0,-44px,0);
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+}
+
+#page-menu.sticky-page-menu { overflow: visible; }
+
+#page-menu.sticky-page-menu #page-menu-wrap {
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+</style>
+</head>
+<body>
+
+{% block content %}
+
+<!--
+  Boilerplate for the Dreamforce 2016 workshop:
+  "Rapid prototyping with the Design System Starter Kit and UI Kit"
+  http://sfdcworkshop.com/workshop/rapid-prototyping-with-slds/
+-->
+
+<div -webkit-overflow-scrolling: touch; overflow: auto;>
+	<p>
+	<br>
+<iframe class="iframe" align="center" name="iframe" src="https://s3.amazonaws.com/heroku-demo/PlatformConceptFlat.png" frameborder="0" allowFullScreen="true"></iframe>
+<!--<iframe class="iframe" name="iframe" src="https://app.powerbi.com/view?r=eyJrIjoiNTA5MmY5ZTctMWYxMS00YWEyLTkwOTUtY2I1ZDdhMWEyNjc3IiwidCI6Ijk1OGQyNmIwLWM2YTEtNGNmMy1iZWY0LTBkZWIwMWFkOTMyOCIsImMiOjR9" width="100%" marginwidth="0" style="border: none; max-width:100%;"></iframe>
+-->
+</div> 
+{% endblock %}
+
+</body>
+</html>
