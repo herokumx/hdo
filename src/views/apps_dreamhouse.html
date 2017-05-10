@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" type="text/css" href="apps.css" />
+  </head>
+  <style>
+  .mobile-content {
+    height: 800px;
+    width: 100%;
+    background: url(onlydevice.png) no-repeat;
+    position: relative;
+    background-size: 380px,600px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-left: 10%;
+    overflow: hidden;
+    z-index: 2;
+}
+.mobile-monitor {
+    position: relative;
+    top: 15%;
+    left: 2.8%;
+    width: 100%;
+    height: 540px;
+    overflow: visible;
+    z-index: 1;
+}
+.mobile-monitor-dreamhouse {
+    position: relative;
+    top: 13.6%;
+    left: 2.2%;
+    width: 100%;
+    height: 558px;
+    overflow: visible;
+    z-index: 1;
+}
+.mobile-content-dreamhouse {
+    height: 830px;
+    width: 100%;
+    background: url(https://s3.amazonaws.com/heroku-demo/onlydevice.png) no-repeat;
+    position: relative;
+    background-size: 380px,600px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-left: 10%;
+    overflow: hidden;
+    z-index: 2;
+}
+  </style>
+  <body data-preload="true">
+    <div class="omega-container">
+      <!-- Body -->
+    <div class="page-content no-breadcrumbs" style="margin-top:0px"> 
+        <div class="container-fluid">
+          <!-- Row Start -->
+          <div class="row"> 
+              <!-- Revenu Chart Start -->
+              <div class="mobile-content-dreamhouse">
+              <div class="mobile-monitor-dreamhouse">
+                    <iframe height="555" width="315" src="https://demo-dreamhouse.herokuapp.com/" allowfullscreen frameborder="0"></iframe>
+              </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
