@@ -1,0 +1,156 @@
+//
+// Prototype styles (using the Sass CSS preprocessor)
+//
+
+//
+// First, we're importing the design system from the npm package
+//
+$static-font-path: '/assets/fonts/webfonts';
+@import 'node_modules/@salesforce-ux/design-system/scss/index';
+
+//
+// Then, we're importing some styles via Sass partials (filenames starting with a "_")
+//
+@import 'footer';
+
+//
+// We can also add styles directly in this file, like so:
+//
+/* Preloader */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #fff;
+}
+.preloader h1 {
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding-top: 150px;
+}
+.preloader .preloader-bar {
+  height: 4px;
+  width: 100%;
+  background: transparent;
+}
+.preloader .preloader-bar .inner-bar {
+  width: 1px;
+  height: 4px;
+  background: #2b9de3;
+}
+// Push down the global navigation below the header using a placeholder element
+.app-header-placeholder {
+  // A note on Design Tokens in Sass:
+  //
+  // $height-header is a Sass variable pointing to a Design Token
+  // Design tokens are listed at:
+  // https://www.lightningdesignsystem.com/design-tokens/
+  //
+  // This is how you leverage Design Tokens in Sass:
+  height: $height-header;
+}
+
+// Wrap the prototype in a scrollable container
+.app-wrapper {
+  overflow: auto;
+  position: absolute;
+  -webkit-overflow-scrolling: touch;
+  top: $height-context-bar + $height-header;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+html, body {
+  margin: 0;
+  height: 100%;             /* need for iframe height 100% to work */
+}
+.iframe {
+   height: 900px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border-style: none;
+   text-align:center;
+   box-sizing: border-box;   /* make the border size be included in the height */
+   display: block;           /* make them block to fix white space margin */
+ /*  to ensure proper scrolling and overflow handling on 
+ mobile devices, put this styling in a div wrapper around the iframe 
+ because it's unreliable in css:
+   -webkit-overflow-scrolling: touch;
+                     overflow: auto;
+ */
+ }
+ .mobile-content {
+    height: 800px;
+    width: 100%;
+    background: url(onlydevice.png) no-repeat;
+    position: relative;
+    background-size: 380px,600px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-left: 10%;
+    overflow: hidden;
+    z-index: 2;
+}
+.mobile-monitor {
+    position: relative;
+    top: 15%;
+    left: 2.8%;
+    width: 100%;
+    height: 540px;
+    overflow: visible;
+    z-index: 1;
+}
+.mobile-monitor-dreamhouse {
+    position: relative;
+    top: 15%;
+    left: 3.75%;
+    width: 100%;
+    height: 560px;
+    overflow: visible;
+    z-index: 1;
+}
+.mobile-content-dreamhouse {
+    height: 800px;
+    width: 100%;
+    background: url(onlydevice.png) no-repeat;
+    position: relative;
+    background-size: 380px,600px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-left: 10%;
+    overflow: hidden;
+    z-index: 2;
+}
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: #fff;
+}
+.preloader h1 {
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding-top: 150px;
+}
+.preloader .preloader-bar {
+  height: 4px;
+  width: 100%;
+  background: transparent;
+}
+.preloader .preloader-bar .inner-bar {
+  width: 1px;
+  height: 4px;
+  background: #2b9de3;
+}
+
